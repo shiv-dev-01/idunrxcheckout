@@ -1,0 +1,136 @@
+.ws2_main_wrapp {
+  background: #fffdeb;
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  /* width: 100vw; */
+  width: 100%;
+}
+
+.ws2_sec_1 {
+  width: 45%;
+}
+
+.ws2_sec_1 > h4 {
+  color: #333;
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+
+.ws2_sec_1 > p {
+  color: var(--clr-black);
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.ws2_sec_2 {
+  width: 45%;
+  border: 10px solid #ebbd41;
+  border-radius: 2rem;
+  padding: 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.ws2_sec_2_line_wrapp {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.ws2_sec_2_line_wrapp > div {
+  width: 30px;
+  min-width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  background: #ebbd41;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ws2_sec_2_line_wrapp > p {
+  font-size: 1.2rem;
+  color: var(--clr-black);
+  font-weight: 400;
+}
+
+.ws2_sec_2_text_wrapp {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 70%;
+  gap: 1rem;
+  /* padding: 1rem; */
+}
+
+.ws2_sec_2_img_wrapp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  padding: 1rem;
+}
+
+@media (max-width: 767px) {
+  .ws2_main_wrapp {
+    flex-direction: column;
+  }
+
+  .ws2_sec_1 {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .ws2_sec_1 > h4 {
+    /* font-size: 2rem; */
+    font-size: 28px;
+    /* font-weight: 700; */
+  }
+
+  .ws2_sec_1 > p {
+    font-size: 1.2rem;
+    text-align: justify;
+  }
+
+  .ws2_sec_2 {
+    width: 100%;
+    border-width: 5px;
+    padding: 24px 10px 10px 10px;
+    flex-direction: column;
+  }
+
+  .ws2_sec_2_text_wrapp {
+    width: 100%;
+  }
+
+  .ws2_sec_2_line_wrapp > p {
+    font-size: 14px;
+    width: 84%;
+  }
+
+  .ws2_sec_2_img_wrapp {
+    width: 80%;
+    margin-top: 10px;
+  }
+
+  .ws2_sec_1 {
+    /* margin-top: 2rem; */
+  }
+
+}
+
+@media (max-width: 480px) {
+  .ws2_sec_2 {
+    /* margin-bottom: 3rem; */
+  }
+
+
+}

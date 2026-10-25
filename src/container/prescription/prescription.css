@@ -1,0 +1,239 @@
+/* prescription.css */
+.prescription {
+  padding: 4rem 0rem 0rem 0rem !important;
+}
+
+.prescription-container {
+  background: linear-gradient(to right, #08446f, #fff);
+  width: 100%;
+  display: flex;
+  gap: 5%;
+}
+
+.prescription-container {
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 2.8rem;
+  line-height: 1.2;
+}
+
+.steps-highlight {
+  color: #fbb034;
+}
+
+.prescription-titel {
+  display: flex;
+  margin-top: 25px;
+  width: 100%;
+  flex-direction: column;
+}
+
+.step {
+  display: flex;
+  margin: 10px;
+  background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  height: 100px;
+  width: 100%;
+  height: 20%;
+}
+
+.steps {
+  padding: 1% 0% 5% 2%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  flex-direction: column;
+  width: 50%;
+}
+
+.stepbtn {
+  display: flex;
+  margin-top: 25px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon_step {
+  font-size: 3rem;
+}
+
+.step_img {
+  background-color: #ebbd41;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.step_del {
+  width: 80%;
+  background-color: #d5d5d5;
+  display: flex;
+  align-items: center;
+  padding: 5px 10px 5px 35px;
+}
+
+.step p {
+  font-size: 20px;
+  color: #002d61;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.prescription_bg {
+  width: 50%;
+}
+
+.prescription_bg img {
+  width: 100%;
+  object-fit: cover;
+      height: 100%;
+}
+
+/* Responsive styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .steps {
+    flex-direction: column;
+    width: 80%;
+    position: relative;
+    bottom: 8rem;
+    padding: 1% 0% 5% 0%;
+    background-color: white;
+    border-radius: 8px;
+    align-items: center;
+  }
+
+  .prescription-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .step {
+    margin: 10px 0;
+    width: 80%;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .step_del {
+    background-color: transparent;
+  }
+  h1 {
+    font-size: 1rem;
+    text-align: center;
+    color: #333333;
+  }
+
+  .steps-highlight {
+    color: #ebbd41;
+    font-size: 35px;
+  }
+  .step p {
+    font-size: 12px;
+  }
+  .step_img {
+    box-shadow: 0 0 0 8px rgba(205, 187, 19, 0.24);
+    border-radius: 8px;
+    background: #f87233;
+  }
+  .step_img svg {
+    width: 30px;
+  }
+  .prescription_bg {
+    width: 100%;
+    order: -1;
+  }
+  .product-button {
+    position: relative;
+    /* margin-bottom: -2.5rem; */
+    font-size: 12px;
+    width: 60%;
+  }
+}
+@media (max-width: 768px) {
+  .steps {
+    flex-direction: column;
+    width: 80%;
+    position: relative;
+    bottom: 8rem;
+    padding: 1% 0% 5% 0%;
+    background-color: white;
+    border-radius: 8px;
+    align-items: center;
+  }
+
+  .prescription-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .step {
+    margin: 10px 0;
+    width: 80%;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .step_del {
+    background-color: transparent;
+  }
+  h1 {
+    font-size: 1rem;
+    text-align: center;
+    color: #333333;
+  }
+
+  .steps-highlight {
+    color: #ebbd41;
+    font-size: 35px;
+  }
+  .step p {
+    font-size: 12px;
+  }
+  .step_img {
+    box-shadow: 0 0 0 8px rgba(205, 187, 19, 0.24);
+    border-radius: 8px;
+    background: #f87233;
+    border-radius: 10px;
+  }
+  .step_img svg {
+    width: 30px;
+  }
+  .prescription_bg {
+    width: 100%;
+    order: -1;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    /* padding: 10px 10px 40px 10px; */
+    padding: 3rem 1rem;
+  }
+  .prescription {
+    padding: 3rem 0rem 0rem 0rem !important;
+  }
+  .step_img {
+    box-shadow: 0 0 0 8px rgba(205, 187, 19, 0.24);
+    border-radius: 8px;
+    background: #f87233;
+    border-radius: 10px;
+    width: 28%;
+  }
+  .step {
+    margin: 10px 0;
+    width: 80%;
+    background: transparent;
+    box-shadow: none;
+    min-height: 66px;
+}
+}

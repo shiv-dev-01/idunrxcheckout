@@ -1,0 +1,135 @@
+.gpl_medications_section {
+  background-color: #f7f7f7;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.content-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap-reverse;
+  gap: 1rem;
+}
+
+.text-content {
+  width: 50%;
+  min-width: 400px;
+  /* padding: 20px 0; */
+}
+
+.text-content h2 {
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  color: #333;
+}
+
+.image-content h2 {
+  display: none;
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  color: #333;
+}
+
+.text-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  line-height: 150%;
+  color: #363636;
+  font-weight: 500;
+}
+
+.image-content {
+  width: 48%;
+  /* padding: 20px; */
+  /* text-align: center; */
+}
+
+.image-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .content-container {
+    flex-direction: column-reverse;
+    /* text-align: center; */
+  }
+
+  .text-content,
+  .image-content {
+    padding: 0;
+    width: 100%;
+  }
+
+  .image-content h2 {
+    display: block;
+  }
+
+  .text-content h2 {
+    display: none;
+  }
+
+  .cta-button {
+    margin-top: 20px;
+    width: 100%;
+  }
+  .text-content p {
+    text-align: justify;
+}
+}
+
+@media (max-width: 480px) {
+  .image-content h2 {
+    font-size: 28px;
+  }
+
+  .text-content p {
+    font-size: 0.9rem;
+    text-align: justify;
+
+  }
+
+  .text-content {
+    min-width: 320px;
+    margin-bottom: 0.5rem;
+
+  }
+
+  .cta-button {
+    padding: 12px 20px;
+    font-size: 0.9rem;
+  }
+   .image-content {
+    /* padding: 2rem 0 0 0; */
+    width: 100%;
+}
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .image-content {
+    width: 100%;
+    text-align: center;
+  }
+  .text-content {
+    width: 100%;
+    text-align: justify;
+  }
+  .content-container {
+    flex-direction: column-reverse;
+  }
+  .image-content h2 {
+    display: block;
+  }
+  .text-content h2 {
+    display: none;
+  }
+}

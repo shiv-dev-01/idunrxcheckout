@@ -1,0 +1,55 @@
+/* Home.css */
+.home-container {
+  background-color: #fff;
+  color: #111;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.home-container a {
+  color: #111;
+  margin: 10px;
+}
+
+.add_res {
+  color: #111;
+}
+
+.link_tag {
+  color: #3a75a0 !important;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.faq_tag p {
+  color: #111;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  margin-top: 25px;
+}
+
+.start_visit {
+  background-color: #111;
+  color: #fff;
+  font-size: 15px;
+  padding: 15px 30px 15px 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 35px;
+  transition: background-color .3s ease;
+}
+
+.start_visit:hover {
+  background-color: #fff;
+  color: #111;
+  border: 2px solid #111;
+
+}

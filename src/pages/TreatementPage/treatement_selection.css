@@ -1,0 +1,220 @@
+.treatment_main_wrapp {
+  width: 100%;
+  margin: 3rem auto;
+}
+.treatment_base_wrapp {
+  max-width: 1280px;
+  margin: auto;
+}
+.treatment_1st_div {
+  display: flex;
+}
+.treat_1st_left {
+  width: 60%;
+}
+.treat_1st_right {
+  width: 40%;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+.treat_1st_left > h1 {
+  font-size: 47px;
+  font-weight: 900;
+  line-height: 57px;
+  text-align: left;
+  max-width: 560px;
+  margin-bottom: 3rem;
+}
+.treat_1st_left > h3 {
+  font-size: 33px;
+  font-weight: 400;
+  line-height: 70px;
+  text-align: left;
+  text-decoration: underline;
+  color: black;
+}
+.treat_pro_list {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.treat_pro_list > div {
+  background: #f87233;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.treat_pro_list > div > img {
+  width: 21px;
+}
+.treat_pro_list > p {
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 38px;
+  text-align: left;
+  margin-bottom: 0;
+  width: 80%;
+  color: black;
+}
+.tret_flex {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+.treat_1st_right > img {
+  width: 100%;
+  max-width: 390px;
+}
+
+.treatment_med_flex_div {
+  display: flex;
+  margin: 5rem auto;
+  justify-content: center;
+  gap: 4rem;
+}
+.treat_med_card {
+  position: relative;
+  padding: 30px 20px;
+  border-radius: 20px;
+  background: white;
+  max-width: 450px;
+}
+
+.treat_med_card::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+
+  background: linear-gradient(157.28deg, #f87233 4.05%, #ffffff 99.06%);
+  border-radius: 20px;
+  z-index: -1;
+}
+
+.treat_med_card_img_div {
+  text-align: center;
+  margin: 2rem 0;
+}
+.treat_med_card_img_div > img {
+  width: 132px;
+}
+.treat_med_card_content_div {
+}
+.treat_med_card_content_div > h4 {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 40px;
+  text-align: center;
+}
+.treat_prescription_text {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 33px;
+  text-align: center;
+  margin-bottom: 0;
+}
+.treat_med_des_div ul {
+  list-style-type: disc;
+  padding-left: 0;
+}
+
+.treat_med_des_div li {
+  position: relative;
+  padding-left: 5px;
+  margin-bottom: 10px;
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 34px;
+  text-align: left;
+}
+.treat_med_des_div {
+  margin: 1rem;
+}
+
+.treat_amount {
+  font-size: 68px;
+  font-weight: 400;
+  line-height: 55px;
+  text-align: left;
+  margin: 2rem 0 4px 21px;
+  color: #111;
+}
+.treat_exp_text {
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 29px;
+  text-align: left;
+  margin-bottom: 0;
+  margin-left: 21px;
+  color: #636363;
+}
+.med-bold-text {
+  font-weight: 600;
+}
+.treat_med_btn_div {
+  text-align: center;
+  margin-top: 2.5rem;
+}
+.treat_med_btn_div > button {
+  background: #111;
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 29px;
+  text-align: center;
+  width: 80%;
+  border-radius: 8px;
+  color: #fff;
+  padding: 1rem 2rem;
+  border: 3px solid #111;
+}
+.treat_med_btn_div > button:hover {
+  background: #fff;
+  color: #111;
+  border: 3px solid #111;
+}
+
+@media screen and (max-width: 768px) {
+  .treatment_main_wrapp {
+    width: 90%;
+  }
+  .treatment_1st_div {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .treat_1st_left {
+    width: 100%;
+  }
+  .treat_1st_right {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .treatment_med_flex_div {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .treatment_1st_div {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .treat_1st_left {
+    width: 100%;
+  }
+  .treat_1st_left > h1 {
+    max-width: 100%;
+  }
+  .treat_1st_right {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+}

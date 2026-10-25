@@ -1,0 +1,41 @@
+{
+  "base": {
+    "url": "https://lightgoldenrodyellow-okapi-586794.hostingersite.com/kishan/demo_clone/api",
+    "auth": {},
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  },
+  "getProducts": {
+    "url": "/products?search={{keyword}}",
+    "method": "get"
+  },
+  "createDiscountCode": {
+    "url": "/coupons",
+    "method": "post"
+  },
+  "deleteDiscountCode": {
+    "url": "/coupons/{{code}}",
+    "method": "delete"
+  },
+  "getOrders": {
+    "url": "/orders?before={{before}}",
+    "method": "get"
+  },
+  "getOrder": {
+    "url": "/order/{{id}}",
+    "method": "get"
+  },
+  "getCategories": {
+    "url": "/categories?search={{keyword}}",
+    "method": "get"
+  },
+  "getProductsInCategory": {
+    "url": "/productsInCategory?category_id={{category_id}}",
+    "method": "get"
+  },
+  "searchCustomers": {
+    "url": "/searchCustomers?search={{keyword}}",
+    "method": "get"
+  } 
+}

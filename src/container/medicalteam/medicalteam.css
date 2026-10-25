@@ -1,0 +1,91 @@
+.medical-team-container {
+  text-align: center;
+  background-color: white;
+  box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.16);
+  width: 100%;
+  padding: 4rem 3rem;
+}
+
+.medical-team-container h2 {
+  color: #333333;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 3rem;
+  margin-left: auto;
+  font-weight: 800;
+}
+
+.medical-team-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.image-item {
+  flex: 1 1 30%;
+  text-align: center;
+}
+
+.image-item img {
+  width: 100%;
+  height: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-item p {
+  margin-top: 15px;
+  font-weight: 600;
+  color: #333333;
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 1024px) {
+  .medical-team-container h2 {
+    font-size: 1.6em; /* Slightly smaller for tablets */
+  }
+
+  .image-item {
+    flex: 1 1 45%; /* Two images per row for tablets */
+  }
+
+  .image-item p {
+    font-size: 0.9rem; /* Smaller font size for tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .medical-team-container h2 {
+    font-size: 1.4em; /* Smaller font for mobile */
+  }
+
+  .image-item {
+    flex: 1 1 80%; /* One image per row for mobile */
+  }
+
+  .image-item p {
+    font-size: 0.85rem; /* Smaller font size for mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .medical-team-container {
+    padding: 1.5rem 1rem;
+  }
+
+  .medical-team-container h2 {
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+  }
+
+  .image-item {
+    flex: 1 1 100%;
+  }
+
+  .image-item p {
+    font-size: 1rem; /* Further smaller font size for very small screens */
+  }
+}

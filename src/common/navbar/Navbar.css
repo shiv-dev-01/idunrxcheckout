@@ -1,0 +1,176 @@
+/* src/components/Navbar.css */
+.navbar {
+  display: flex;
+  align-items: center;
+  /* display: grid; */
+  /* align-items: initial; */
+  /* grid-template-columns: 2fr 1fr 2fr; */
+  justify-content: space-between;
+  padding: 1rem 3rem;
+  background-color: var(--clr-card-bg);
+  color: var(--clr-text);
+  font-weight: 700;
+  border-bottom: 1px solid var(--clr-border);
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0.4;
+}
+
+.navbar-brand .logo {
+  height: 60px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin-right: 20px;
+  position: relative;
+}
+
+.nav-item a {
+  color: var(--clr-text);
+  text-decoration: none;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: var(--clr-card-bg);
+  padding: 10px 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--clr-border);
+}
+
+.nav-item:hover .dropdown {
+  display: block;
+}
+
+.dropdown-content {
+  display: flex;
+}
+
+.dropdown-section {
+  margin-right: 20px;
+}
+
+.dropdown-section h3 {
+  margin: 0 0 10px 0;
+  color: var(--clr-main);
+}
+
+.dropdown-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-section ul li {
+  margin-bottom: 10px;
+}
+
+.dropdown-section ul li a {
+  color: var(--clr-text);
+  text-decoration: none;
+}
+
+.navbar-signin {
+  flex: 0.3;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.signin-btn {
+  background-color: var(--clr-main);
+  color: var(--clr-black);
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  border: 3px solid var(--clr-main);
+  font-weight: 700;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: var(--transition);
+}
+
+.signin-btn:hover {
+  background-color: transparent;
+  color: var(--clr-main);
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger .line {
+  width: 25px;
+  height: 3px;
+  background-color: var(--clr-text);
+  margin: 4px 0;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem;
+  }
+
+  .navbar-brand {
+    flex: none;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 88px;
+    left: 0;
+    width: 100%;
+    background-color: var(--clr-card-bg);
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem 10px;
+    border-bottom: 1px solid var(--clr-border);
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-item {
+    margin: 10px 0;
+  }
+
+  .hamburger {
+    /* display: block; */
+  }
+
+  .navbar-brand .logo {
+    /* height: 30px; */
+  }
+
+  .signin-btn {
+    padding: 10px 1rem;
+    font-size: 12px;
+  }
+
+  .nav_eampy_div {
+    display: none;
+  }
+  /* new */
+  .navbar-signin {
+    flex: 0.6 1;
+  }
+}

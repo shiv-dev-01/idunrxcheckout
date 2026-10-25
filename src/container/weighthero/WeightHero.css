@@ -1,0 +1,27 @@
+.whero_main_wrapp {
+  width: -webkit-fill-available;
+  height: 90vh;
+  display: flex;
+  background: url("https://levelupmeds.com/wp-content/uploads/2024/01/successful-diet-concept-young-female-in-oversized-2023-11-27-05-25-49-utc-1.jpg");
+  /* background: url("https://levelupmeds.com/wp-content/uploads/2024/01/Mask-Groupd-50-1.jpg"); */
+  background-position: top;
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: cover;
+
+  padding: 4rem 3rem;
+}
+
+.whero_card_wrapp {
+  margin-left: auto;
+  margin-top: auto;
+}
+
+@media (max-width: 767px) {
+  .whero_main_wrapp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 1rem 2.5rem 1rem;
+  }
+}

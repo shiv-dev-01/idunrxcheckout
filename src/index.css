@@ -1,0 +1,408 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Gibson";
+  font-weight: 100;
+  src: url(./utils/fonts/gibson/fonnts.com-Gibson_Thin.otf) format("opentype");
+}
+@font-face {
+  font-family: "Gibson";
+  font-weight: 300;
+  src: url(./utils/fonts/gibson/fonnts.com-Gibson_Light.otf) format("opentype");
+}
+@font-face {
+  font-family: "Gibson";
+  font-weight: 400;
+  src: url(./utils/fonts/gibson/fonnts.com-Gibson_Regular.otf)
+    format("opentype");
+}
+@font-face {
+  font-family: "Gibson";
+  font-weight: 500;
+  src: url(./utils/fonts/gibson/fonnts.com-Gibson_Medium.otf) format("opentype");
+}
+@font-face {
+  font-family: "Gibson";
+  font-weight: 600;
+  src: url(./utils/fonts/gibson/fonnts.com-Gibson_SemiBold.otf)
+    format("opentype");
+}
+@font-face {
+  font-family: "Gibson";
+  font-weight: 700;
+  src: url(./utils/fonts/gibson/fonnts.com-Gibson_Bold.otf) format("opentype");
+}
+@font-face {
+  font-family: "Gibson";
+  font-weight: 900;
+  src: url(./utils/fonts/gibson/fonnts.com-Gibson_Heavy.otf) format("opentype");
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root {
+  --font-base: "Gibson";
+  --clr-yellow: #21aeda;
+  --clr-main: #c8ad68; /* Black for buttons */
+  --clr-white: #fff; /* True white */
+  --clr-gray: #333;
+  --clr-red-dark: hsl(360, 67%, 44%);
+  --clr-red-light: hsl(360, 71%, 66%);
+  --clr-green-dark: hsl(125, 67%, 44%);
+  --clr-green-light: hsl(125, 71%, 66%);
+  --clr-black: #111; /* True black for buttons */
+  --clr-black-blue: #1a1a1a;
+  --clr-bg: #fff; /* White background */
+  --clr-text: #111; /* Black font */
+  --clr-text-secondary: #333;
+  --clr-border: #e0e0e0;
+  --clr-input-bg: #fff;
+  --clr-card-bg: #fff;
+  --transition: all 0.3s linear;
+  --spacing: 0.1rem;
+  --radius: 0.25rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  --max-width: 1040px;
+  --fixed-width: 620px;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: #111 !important;
+  -webkit-box-shadow: 0 0 0px 1000px #fff inset !important;
+  background-color: #fff !important;
+  color: #111 !important;
+  border: 1px solid var(--clr-border);
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+input,
+select {
+  background: #fff;
+  color: #111;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  font-family: var(--font-base);
+  max-width: 100vw;
+  /* font-family: "Lato", sans-serif !important; */
+}
+
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-base);
+  background: var(--clr-bg);
+  color: var(--clr-text);
+  overflow-x: hidden;
+}
+
+figure {
+  margin: 0px !important;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: var(--font-base);
+  color: var(--clr-text);
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--clr-text);
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.underline:hover {
+  text-decoration: none;
+}
+
+strong,
+b {
+  font-weight: bold;
+}
+
+i {
+  font-style: italic;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--clr-border);
+  margin: 1rem 0;
+}
+
+.hr {
+  border: none;
+  border-top: 1px solid var(--clr-border);
+  margin: 1rem 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type="checkbox"] {
+  accent-color: var(--clr-main);
+}
+
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid var(--clr-main);
+  outline-offset: 2px;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: var(--font-base);
+}
+
+button[type="submit"] {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+textarea {
+  font-family: var(--font-base);
+}
+
+a {
+  color: var(--clr-text);
+}
+
+a,
+button {
+  transition: var(--transition);
+}
+
+.section {
+  padding: 5rem 0;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 3rem 0;
+  }
+}
+
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loading {
+  width: 6rem;
+  height: 6rem;
+  border: 5px solid var(--clr-border);
+  border-radius: 50%;
+  border-top-color: var(--clr-main);
+  animation: spinner 0.6s linear infinite;
+  margin: 0 auto;
+}
+
+.btn {
+  background: var(--clr-black);
+  color: var(--clr-white);
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius);
+  border: 2px solid var(--clr-black);
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: var(--spacing);
+  transition: var(--transition);
+  display: inline-block;
+}
+
+.btn2 {
+  background: var(--clr-black);
+  color: var(--clr-white);
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius);
+  border: 2px solid var(--clr-black);
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: var(--spacing);
+  transition: var(--transition);
+  display: inline-block;
+  width: 100%;
+}
+
+.btn:hover {
+  background: var(--clr-white);
+  color: var(--clr-black);
+  border: 2px solid var(--clr-black);
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.my_logo {
+  width: 100px;
+  height: auto;
+}

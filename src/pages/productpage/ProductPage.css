@@ -1,0 +1,13 @@
+.all_products_wrapp {
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.product-details {
+  color: #111;
+}
